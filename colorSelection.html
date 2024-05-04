@@ -1,0 +1,42 @@
+<div id='selectionPage'>
+    <div id='addColor'>
+        <p><b>Add a Color</b></p><hr>
+        <form id='addColorForm' method="POST">
+            <input type='hidden' name='action' value='add'>
+            <label for="colorName">Color Name:</label>
+            <input type="text" id="colorName" name="colorName" placeholder="yellow" required><br><br>
+            <label for="hexValue">Hex Value:</label>
+            <input type="text" id="hexValue" name="hexValue" placeholder="#fff55a" required><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <span id='addSpan'></span>
+    </div>
+    <div id='editColor'>
+        <p><b>Edit a Color</b></p><hr>
+        <form id='editColorForm' method="POST">
+            <input type='hidden' name='action' value='edit'>
+            <label for="colorSelection">Select a color:</label>
+            <select id="colorSelection" name="colorSelection" class="colorSelection"></select>
+            <br><br>
+            <label for="colorName">Color Name:</label>
+            <input type="text" id="colorName" name="colorName" placeholder="red" required><br><br>
+            <label for="hexValue">Hex Value:</label>
+            <input type="text" id="hexValue" name="hexValue" placeholder="#ff0000" required><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <span id='editSpan'></span>
+    </div>
+    <div id='deleteColor'>
+        <p><b>Remove a Color</b></p><hr>
+        <form id='deleteColorForm' method="POST">
+            <input type='hidden' name='action' value='delete'>
+            <label for="colorSelection">Select a color:</label>
+            <select id="colorSelection" name="colorSelection" class="colorSelection"></select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <span id='deleteSpan'></span>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div id="formContainer">
+    <form id="userInputForm" method="GET" action="generator.php">
+        <label for="rowCol">Number of Rows & Columns:</label>
+        <input type="number" id="rowCol" min="1" max="26" name="rowCol" required value="1">
+        <br>
+        <br>
+
+        <label for="numColors">Number of Colors:</label>
+        <input type="number" id="numColors" min="1" name="numColors" required value="1">
+        <br>
+        <br>
+        <hr>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br>
+
+        <span id="invalidForm"></span>
+    </form>
+</div>

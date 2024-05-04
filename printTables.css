@@ -1,0 +1,44 @@
+body, html {
+    filter: grayscale(100%);
+    margin: 0 auto;
+    padding: 0;
+    width: 8.5in;
+    height: 11in;
+    border: 1px solid lightgray;
+    overflow-y: hidden;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+header img {
+    filter: grayscale(100%);
+    width: 20%;
+    height: auto;
+    max-width: 100%;
+}
+
+#upperContainer, #lowerContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+table, th, tr, td {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#lowerTable td, th {
+    height: 1em;
+    width: 1em;
+}
+
+.print-only {
+    display: none;
+}
